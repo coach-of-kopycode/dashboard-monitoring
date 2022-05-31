@@ -65,6 +65,6 @@ def show_data(result):
     print(f"Hours : {result['time']['hours']}")
     print(f"Magnitude : {result['magnitude']}")
     print(f"Depth : {result['depth']}")
-    print(f"Coordinate : LU= {result['coordinate']['lu']}, BT= {result['coordinate']['bt']}")
+    print(f"Coordinate : {result['coordinate']['lu']}, {result['coordinate']['bt']}")
     print(f"location : {result['location']}")
     print(f"Felt : {result['felt']}")
