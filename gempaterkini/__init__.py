@@ -44,14 +44,14 @@ def extract_data():
 
             i = i + 1
 
-        hasil = dict()
-        hasil['time'] = {'date': date, 'hours': hours}
-        hasil['magnitude'] = magnitude
-        hasil['depth'] = depth
-        hasil['coordinate'] = {'lu': lu, 'bt': bt}
-        hasil['location'] = location
-        hasil['felt'] = felt
-        return hasil
+        data = dict()
+        data['time'] = {'date': date, 'hours': hours}
+        data['magnitude'] = magnitude
+        data['depth'] = depth
+        data['coordinate'] = {'lu': lu, 'bt': bt}
+        data['location'] = location
+        data['felt'] = felt
+        return data
     else:
         return None
 
