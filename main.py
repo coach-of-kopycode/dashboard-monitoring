@@ -2,10 +2,10 @@
 Aplikasi deteksi gempa terkini
 """
 
-import gempaterkini
+from gempaterkini import GempaTerkini
 
 if __name__ == '__main__':
-    print('Main app')
-    print('\nLatest Earthquake data from BMKG | Indonesia Meteorological, Climatological, and Geophysical Agency\n')
-    result = gempaterkini.extract_data()
-    gempaterkini.show_data(result)
+    gempa = GempaTerkini('https://www.bmkg.go.id/')
+    gempa.show_description()
+    gempa.run()
+
